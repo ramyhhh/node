@@ -1,0 +1,8 @@
+#!/bin/sh
+ssh nodeuser@server.sabr-sp.com <<EOF
+ cd ~/node
+ git pull
+ npm install
+ pm2 restart all
+ exit
+EOF
